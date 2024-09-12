@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iworfshop/screens/loginScreen.dart';
+import 'package:iworfshop/screens/welcomeScreen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/': (context) => loginScreen()
+        '/': (context) => WelcomeScreen()
       }
     );
   }

@@ -44,9 +44,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      // get started text
                       Text(
-                        'Get Started',
+                        'Iworf Shop',
                         style: TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.w900,
@@ -60,13 +59,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       TextFormField(
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter Full name';
+                            return 'Kullanıcı adı';
                           }
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: const Text('Full Name'),
-                          hintText: 'Enter Full Name',
+                          label: const Text('Kullanıcı adı'),
+                          hintText: 'Kullanıcı adı girin',
                           hintStyle: const TextStyle(
                             color: Colors.black26,
                           ),
@@ -91,13 +90,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       TextFormField(
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter Email';
+                            return 'Mail';
                           }
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: const Text('Email'),
-                          hintText: 'Enter Email',
+                          label: const Text('Mail'),
+                          hintText: 'Mail girin',
                           hintStyle: const TextStyle(
                             color: Colors.black26,
                           ),
@@ -124,13 +123,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         obscuringCharacter: '*',
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter Password';
+                            return 'Şifre girin';
                           }
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: const Text('Password'),
-                          hintText: 'Enter Password',
+                          label: const Text('Şifre'),
+                          hintText: 'Şifre girin',
                           hintStyle: const TextStyle(
                             color: Colors.black26,
                           ),
@@ -164,16 +163,18 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             activeColor: lightColorScheme.primary,
                           ),
                           const Text(
-                            'I agree to the processing of ',
+                            'Kişisel bilgilerimin paylaşımını ',
                             style: TextStyle(
                               color: Colors.black45,
+                              fontSize: 12.0
                             ),
                           ),
                           Text(
-                            'Personal data',
+                            'onaylıyorum',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               color: lightColorScheme.primary,
+                              fontSize: 12.0
                             ),
                           ),
                         ],
@@ -201,7 +202,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               );
                             }
                           },
-                          child: const Text('Sign up'),
+                          child: const Text('Kayıt ol'),
                         ),
                       ),
                       const SizedBox(

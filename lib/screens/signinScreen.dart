@@ -43,7 +43,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
-                        'Welcome back',
+                        'Tekrar Hoşgeldiniz',
                         style: TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.w900,
@@ -56,13 +56,13 @@ class _SignInScreenState extends State<SignInScreen> {
                       TextFormField(
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter Email';
+                            return 'Mail Giriniz';
                           }
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: const Text('Email'),
-                          hintText: 'Enter Email',
+                          label: const Text('Mail'),
+                          hintText: 'Mail Giriniz',
                           hintStyle: const TextStyle(
                             color: Colors.black26,
                           ),
@@ -88,13 +88,13 @@ class _SignInScreenState extends State<SignInScreen> {
                         obscuringCharacter: '*',
                         validator: (value) {
                           if (value == null || value.isEmpty) {
-                            return 'Please enter Password';
+                            return 'Şifre giriniz';
                           }
                           return null;
                         },
                         decoration: InputDecoration(
-                          label: const Text('Password'),
-                          hintText: 'Enter Password',
+                          label: const Text('Şifre'),
+                          hintText: 'Şifre giriniz',
                           hintStyle: const TextStyle(
                             color: Colors.black26,
                           ),
@@ -130,7 +130,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                 activeColor: lightColorScheme.primary,
                               ),
                               const Text(
-                                'Remember me',
+                                'Hatırla',
                                 style: TextStyle(
                                   color: Colors.black45,
                                 ),
@@ -139,7 +139,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           ),
                           GestureDetector(
                             child: Text(
-                              'Forget password?',
+                              'Şifremi unuttum',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: lightColorScheme.primary,
@@ -170,7 +170,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               );
                             }
                           },
-                          child: const Text('Sign up'),
+                          child: const Text('Kayıt ol'),
                         ),
                       ),
                       const SizedBox(
@@ -225,7 +225,7 @@ class _SignInScreenState extends State<SignInScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Text(
-                            'Don\'t have an account? ',
+                            'Zaten bir hesabın var mı ',
                             style: TextStyle(
                               color: Colors.black45,
                             ),
@@ -240,7 +240,7 @@ class _SignInScreenState extends State<SignInScreen> {
                               );
                             },
                             child: Text(
-                              'Sign up',
+                              'Kayıt ol',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: lightColorScheme.primary,
